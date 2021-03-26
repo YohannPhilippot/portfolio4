@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react';
 import { BrowserRouter, NavLink } from 'react-router-dom'
 
 function Menu() {

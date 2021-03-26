@@ -5,7 +5,7 @@ function Contact() {
 
     return (
         <div>
-
+            ooo
         </div>
     )
 }

@@ -57,8 +57,11 @@
   padding-bottom: 0!important;
   padding-top: 0!important;
   padding-left: 0!important;
-  padding-right: 0!important;
-  height: 6rem;
+  padding-right: 0!important; 
+  z-index: 1;
+    @media (min-width: 992px) {
+      height: 6rem;
+    }
 }
 
 @keyframes nameApparition {
@@ -90,8 +93,13 @@
   margin-right: 0!important;
   padding-right: 0!important;
   margin-left: 0!important;
+  z-index: 1;
   @media screen and (max-width: 992px) {
     box-shadow:  0px 5px 10px -5px #111
+  }
+
+  .navbar-nav {
+    z-index: 2;
   }
 
   h1 {
@@ -192,10 +200,149 @@
   }
 }
 
+.marginx5 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
 .rightTranslate {
   animation: rightTranslate 1000ms ease-in-out both;
 }
 
 .leftTranslate {
   animation: leftTranslate 1000ms ease-in-out both;
+}
+
+.desc-margin {
+  padding: 15px 15px 15px 15px;
+}
+
+.desc-border {
+  border-radius: 2rem;
+}
+
+@keyframes contentApparition {
+  0% {
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px);
+    opacity: 1;
+  }
+}
+
+.content {
+  animation: contentApparition 500ms ease-out both;
+  background-color: rgb(58, 55, 55);
+  transform: translateY(-1000px);
+  z-index: 3;
+  a {
+    color: #fff;
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  p {
+    display: block;
+  }
+}
+
+.content-font {
+  color: #fff;
+}
+
+.formation {
+  animation: contentApparition 1000ms 500ms ease-out both;
+}
+
+.formationName {
+  animation: contentApparition 1000ms 750ms ease-out both;
+}
+
+.formationDesc {
+  animation: contentApparition 1000ms 1000ms ease-out both;
+}
+
+@keyframes rightSlide {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+
+  80%{
+    transform: translateX(150px);
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes leftSlide {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+
+  80%{
+    transform: translateX(-150px);
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.formationElem {
+  &--1 {
+    animation: rightSlide 1000ms 1250ms ease-out both;
+  }
+
+  &--2 {
+    animation: leftSlide 1000ms 1450ms ease-out both;
+  }
+
+  &--3 {
+    animation: rightSlide 1000ms 1650ms ease-out both;
+  }
+
+  &--4 {
+    animation: leftSlide 1000ms 1850ms ease-out both;
+  }
+
+  &--5 {
+    animation: rightSlide 1000ms 2050ms ease-out both;
+  }
+
+  &--6 {
+    animation: leftSlide 1000ms 2250ms ease-out both;
+  }
+
+  &--7 {
+    animation: rightSlide 1000ms 2450ms ease-out both;
+  }
+
+  &--8 {
+    animation: leftSlide 1000ms 2650ms ease-out both;
+  }
+
+  &--9 {
+    animation: rightSlide 1000ms 2850ms ease-out both;
+  }
+
+  &--10 {
+    animation: leftSlide 1000ms 3050ms ease-out both;
+  }
+
+  &--11 {
+    animation: rightSlide 1000ms 3250ms ease-out both;
+  }
+  
+}
+.fs4 {
+  font-size: 4rem;
 }

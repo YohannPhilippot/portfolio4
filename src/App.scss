@@ -177,7 +177,7 @@
 }
 
 .hidden {
-  display: none;
+  display: none!important;
 }
 
 @keyframes rightTranslate {
@@ -254,25 +254,25 @@
 }
 
 .formation {
-  animation: contentApparition 1000ms 500ms ease-out both;
+  animation: contentApparition 1000ms  ease-out both;
 }
 
 .formationName {
-  animation: contentApparition 1000ms 750ms ease-out both;
+  animation: contentApparition 1000ms 250ms ease-out both;
 }
 
 .formationDesc {
-  animation: contentApparition 1000ms 1000ms ease-out both;
+  animation: contentApparition 1000ms 500ms ease-out both;
 }
 
 @keyframes rightSlide {
   0% {
-    transform: translateX(-1000px);
+    transform: translateX(-500px);
     opacity: 0;
   }
 
   80%{
-    transform: translateX(150px);
+    transform: translateX(100px);
   }
 
   100% {
@@ -283,12 +283,12 @@
 
 @keyframes leftSlide {
   0% {
-    transform: translateX(1000px);
+    transform: translateX(500px);
     opacity: 0;
   }
 
   80%{
-    transform: translateX(-150px);
+    transform: translateX(-100px);
   }
 
   100% {
@@ -345,4 +345,44 @@
 }
 .fs4 {
   font-size: 4rem;
+}
+
+.skillsGame {
+  background-color: rgb(58, 55, 55);
+}
+
+.click {
+  background-color: #f9741b;
+  box-shadow:  -10px 10px 5px #111;
+  border-radius: 50%;
+  width: 75px;
+  height:75px;
+  &--1 {
+    top: 50%;
+    left:50%;
+  }
+  &--2 {
+    top:20%;
+    left:80%
+  }
+  &--3 {
+    top:70%;
+    left:25%
+  }
+  &--4 {
+    top:40%;
+    left:60%
+  }
+  &--5 {
+    top:30%;
+    left:10%
+  }
+  &--6 {
+    top:80%;
+    left:55%
+  }
+  &--7 {
+    top:10%;
+    left:35%
+  }
 }

@@ -10,7 +10,7 @@ import Contact from './components/Contact'
 function App() {
   return (
     
-      <div>
+      
         <BrowserRouter>
           <Menu />
           <Switch>
@@ -22,7 +22,7 @@ function App() {
            
           </Switch>
         </BrowserRouter>
-      </div>
+      
     
   );
 }

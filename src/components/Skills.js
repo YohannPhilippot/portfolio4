@@ -1,6 +1,6 @@
 import React from 'react';
 
-
+import Loader from './Loader'
 
 function Skills() {
 
@@ -12,10 +12,7 @@ function Skills() {
         elemId.classList.add('hidden')
         if (elemId.id !== 'click7') {
             elemId2.classList.remove('hidden')
-        }
-
-        
-        
+        } 
     }
 
     function handleClick() {
@@ -46,28 +43,34 @@ function Skills() {
     }
 
     return (
+
+            
             <div className='docHeight skillsGame position-relative'>
-                <div onClick={handleClick} className='content-font position-absolute d-flex justify-content-center align-items-center text-center click click--1' id='click1'>
-                    Cliquez-moi
+                <Loader />
+                <div id='page'>
+                    <div onClick={handleClick} className='content-font position-absolute d-flex justify-content-center align-items-center text-center click click--1' id='click1'>
+                        Cliquez-moi
+                    </div>
+                    <div onClick={handleClick} className='content-font position-absolute d-flex justify-content-center align-items-center text-center click click--2 hidden' id='click2'>
+                        Cliquez-moi
+                    </div>
+                    <div onClick={handleClick} className='content-font position-absolute d-flex justify-content-center align-items-center text-center click click--3 hidden' id='click3'>
+                        Cliquez-moi
+                    </div>
+                    <div onClick={handleClick} className='content-font position-absolute d-flex justify-content-center align-items-center text-center click click--4 hidden' id='click4'>
+                        Cliquez-moi
+                    </div>
+                    <div onClick={handleClick} className='content-font position-absolute d-flex justify-content-center align-items-center text-center click click--5 hidden' id='click5'>
+                        Cliquez-moi
+                    </div>
+                    <div onClick={handleClick} className='content-font position-absolute d-flex justify-content-center align-items-center text-center click click--6 hidden' id='click6'>
+                        Cliquez-moi
+                    </div>
+                    <div onClick={handleClick} className='content-font position-absolute d-flex justify-content-center align-items-center text-center click click--7 hidden' id='click7'>
+                        Cliquez-moi
+                    </div>
                 </div>
-                <div onClick={handleClick} className='content-font position-absolute d-flex justify-content-center align-items-center text-center click click--2 hidden' id='click2'>
-                    Cliquez-moi
-                </div>
-                <div onClick={handleClick} className='content-font position-absolute d-flex justify-content-center align-items-center text-center click click--3 hidden' id='click3'>
-                    Cliquez-moi
-                </div>
-                <div onClick={handleClick} className='content-font position-absolute d-flex justify-content-center align-items-center text-center click click--4 hidden' id='click4'>
-                    Cliquez-moi
-                </div>
-                <div onClick={handleClick} className='content-font position-absolute d-flex justify-content-center align-items-center text-center click click--5 hidden' id='click5'>
-                    Cliquez-moi
-                </div>
-                <div onClick={handleClick} className='content-font position-absolute d-flex justify-content-center align-items-center text-center click click--6 hidden' id='click6'>
-                    Cliquez-moi
-                </div>
-                <div onClick={handleClick} className='content-font position-absolute d-flex justify-content-center align-items-center text-center click click--7 hidden' id='click7'>
-                    Cliquez-moi
-                </div>
+                
             </div>
     )
     

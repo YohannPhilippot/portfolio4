@@ -108,7 +108,7 @@ function Skills() {
                         j'ai décidé de me tourner vers ReactJS. Pourquoi React me direz-vous? Parce que c'est un framework en constante évolution et sa lisibilité est un des atouts dont je suis tombé amoureux !</div>
                         <img className='col-lg-2 col-6 offset-3 offset-lg-1 skillImg' src='../../ReactJs.png' alt='logo React JS'/>
                     </div>
-                    <div className='d-flex flex-column flex-lg-row skillsElement py-3'>
+                    <div className='d-flex flex-column flex-lg-row skillsElement py-5'>
                         <img className='col-lg-2 col-6 offset-3 skillImg skillImg--left' src='../../mySQL.png' alt='logo mySQL' />
                         <div className='col-lg-8 col pl-lg-5 ml-lg-5 text-center d-flex align-items-center'> Et enfin, côté backend, il m'a fallu utiliser des bases de données relationnelles pour pouvoir stocker des données et les 
                         faire intéragir entre elles. Pour ce faire, j'ai été formé à utiliser MySQL.  </div>

@@ -11,9 +11,9 @@ function Menu() {
             
             <div className="navbar-nav d-flex flex-row w-100 mw-100 justify-content-around align-items-center items-margin bg-navbar">
                                      
-                    <NavLink className="nav-link mx-3 mh-100 col" to='/about'>A propos de moi</NavLink>
-                    <NavLink className="nav-link mx-3 mh-100 col" to='/skills'>Mes skills</NavLink>
-                    <NavLink className="nav-link mx-3 mh-100 col" to='/contact'>Contactez-moi</NavLink>
+                    <NavLink className="nav-link mx-3 mh-100 col text-center" to='/about'>A propos de moi</NavLink>
+                    <NavLink className="nav-link mx-3 mh-100 col text-center" to='/skills'>Mes skills</NavLink>
+                    <NavLink className="nav-link mx-3 mh-100 col text-center" to='/contact'>Contactez-moi</NavLink>
                 
                 
             </div>

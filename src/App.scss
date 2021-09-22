@@ -164,6 +164,10 @@
 .marginx5 {
   padding-left: 5rem;
   padding-right: 5rem;
+  @media (max-width: 992px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 .rightTranslate {
@@ -216,6 +220,9 @@
 
 .formation {
   animation: contentApparition 1000ms  ease-out both;
+  @media (max-width: 992px) {
+    text-align: center;
+  }
 }
 
 .formationName {
@@ -304,8 +311,38 @@
   }
   
 }
+
+
+
 .fs4 {
   font-size: 4rem;
+  @media (max-width: 992px) {
+    font-size: 3rem;
+  }
+}
+
+.skills {
+  background-color:hsl(0, 0%, 85%);
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.skillsElement {
+  
+  box-shadow: 0px 0px 5px;
+}
+
+.skillImg{
+  
+  @media (min-width: 992px) {
+    &--left {
+      margin-left: 5%;
+    }
+    &--right {
+      margin-left: -5%;
+    }
+  }
+  
 }
 
 .skillsGame {
@@ -314,13 +351,13 @@
 
 .click {
   background-color: #f9741b;
-  box-shadow:  -10px 10px 5px #111;
   border-radius: 50%;
+  border: 3px solid gray;
   width: 75px;
   height:75px;
   &--1 {
     top: 50%;
-    left:50%;
+    left:random(100) /100 * 100%;
   }
   &--2 {
     top:20%;
@@ -348,6 +385,27 @@
   }
 }
 
+.contactForm {
+  background-color: #E5E5E5;
+  border-radius: 1.5rem;
+  box-shadow: 10px 10px 10px;
+  @media (max-width: 992px) {
+    border-radius: 0;
+  }
+}
+
+input {
+  box-shadow: 0px 5px 10px;
+}
+
+textarea {
+  box-shadow: 0px 5px 10px;
+}
+
+#message {
+  height: 200px;
+}
+
 #loader {
   position: fixed;
   top: 50%;
@@ -361,7 +419,7 @@
       height: 50px;
       border-radius: 10%;
       margin-right: 1rem;
-      animation: loading 1500ms cubic-bezier(0.57, 0.2, 0.57, 0.86);
+      animation: loading 1000ms cubic-bezier(0.57, 0.2, 0.57, 0.86);
       position: relative;
 
       &--1 {
